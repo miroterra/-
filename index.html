@@ -5,19 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- meta -->
+    <!-- meta태그 사이트 설명 -->
     <meta name="author" content="Takphantom" />
+    <meta name="description" content="웹 표준을 준수한 사이트 예제입니다" />
+    <meta name="keywords" content="탁팬텀, 웹표준, 웹접근성, 사이트 만들기" />
+
     <title>웹표준</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../웹표준 연습 코딩/css/reset.css" />
-    <link rel="stylesheet" href="../웹표준 연습 코딩/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <!-- Web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
     <!-- JS -->
-    <script src="../웹표준 연습 코딩/js/main.js" defer></script>
+    <script src="/js/main.js" defer></script>
   </head>
   <body>
     <!-- skip nav -->
-    <div id="wrap">
-      <div id="header"></div>
+    <div id="skip">
+      <a href="#cont_nav">전체 메뉴 바로가기</a>
+      <a href="#cont_ban">배너 영역 바로가기</a>
+      <a href="#cont_cont">컨텐츠 영역 바로가기</a>
     </div>
+    <!-- //skip nav -->
+
+    <div id="wrap">
+      <div id="header">
+        <div class="container">
+          <div class="header">
+            <div class="header_menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+            <!-- //header menu -->
+            <div class="header_tit">
+              <h1>Validation - practice</h1>
+              <a href="#">Takphantom</a>
+            </div>
+            <!-- //header title -->
+            <div class="header_icon">
+              <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+              <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+              <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+              <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+            </div>
+            <!-- //header icon -->
+          </div>
+        </div>
+      </div>
+      <!-- //header -->
+
+      <div id="content">
+        <div id="cont_nav">
+          <div class="container"></div>
+        </div>
+        <!-- //cont_nav -->
+        <div id="cont_tit">
+          <div class="container"></div>
+        </div>
+        <!-- //cont_tit -->
+        <div id="cont_ban">
+          <div class="container"></div>
+        </div>
+        <!-- //cont_ban -->
+        <div id="con_cont">
+          <div class="container"></div>
+        </div>
+        <!-- //con_cont -->
+      </div>
+      <!-- //content -->
+
+      <div id="footer">
+        <div class="container"></div>
+      </div>
+      <!-- //footer -->
+    </div>
+    <!-- //wrap -->
   </body>
 </html>
