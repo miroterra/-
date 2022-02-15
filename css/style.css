@@ -33,6 +33,7 @@
 /* 컨텐츠 레이아웃 */
 #cont_nav {
   background-color: #f6fdff;
+  display: none;
 }
 #cont_tit {
   background-color: #eaf7fd;
@@ -162,6 +163,9 @@
   width: 60px;
   height: 60px;
   background: url(../img/icon.png) no-repeat 0 -600px;
+}
+.tit .btn.on {
+  background-position: 0 -660px;
 }
 
 /* banner */
