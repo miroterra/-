@@ -51,7 +51,8 @@ table {
 }
 
 /* font style reset */
-em {
+em,
+address {
   font-style: normal;
 }
 

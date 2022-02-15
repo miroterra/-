@@ -20,17 +20,14 @@
 }
 
 /* 레이아웃 */
-#wrap {
-}
+
 #header {
   height: 325px;
   background: url(../img/header_bg.jpg) center top repeat-x;
 }
-#content {
-}
+
 #footer {
-  height: 200px;
-  background: #333;
+  border-top: 1px solid #eee;
 }
 
 /* 컨텐츠 레이아웃 */
@@ -55,8 +52,7 @@
 }
 
 /* header */
-.header {
-}
+
 .header .header_menu {
   text-align: right;
 }
@@ -348,8 +344,7 @@
   padding-bottom: 3px;
   font-weight: bold;
 }
-.notice2 ul {
-}
+
 .notice2 li {
   overflow: hidden;
   background: url(../img/dot.gif) no-repeat 0 8px;
@@ -468,8 +463,7 @@
 }
 
 /* 게시판 4 마우스 호버2 */
-.notice_hover2 {
-}
+
 .notice_hover2 ul {
   overflow: hidden;
 }
@@ -736,4 +730,30 @@
 }
 .popup li img {
   width: 100%;
+}
+/* footer */
+.footer {
+  padding: 25px;
+  text-align: center;
+}
+.footer ul {
+  margin-bottom: 20px;
+}
+.footer li {
+  position: relative;
+  display: inline;
+  padding: 0 7px 0 10px;
+}
+.footer li:before {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.footer li:first-child:before {
+  width: 0;
+  height: 0;
 }
