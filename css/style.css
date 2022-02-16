@@ -198,6 +198,9 @@
 .ban ul {
   overflow: hidden;
 }
+.ban.animated {
+  transition: 0.5s ease-out;
+}
 .ban ul li {
   float: left;
   width: 330px;
