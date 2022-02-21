@@ -175,12 +175,15 @@
 }
 .ban {
   position: relative;
-  padding: 24px 0 20px;
+  padding: 24px 0;
   margin: 0 auto;
   width: 960px;
+  height: 125px;
   overflow: hidden;
 }
 .ban ul {
+  position: absolute;
+  left: 0;
   overflow: hidden;
 }
 .ban.animated {
