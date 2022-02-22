@@ -43,10 +43,12 @@ function setInitialPos() {
   let initialTranslateValue = -(slideWidth + slideMargin) * slideCount;
   slides.style.transform = 'translateX(' + initialTranslateValue + 'px)';
 }
-nextBtn.addEventListener('click', function () {
+nextBtn.addEventListener('click', function (e) {
+  e.preventDefault();
   moveslide(currentIdx + 1);
 });
-prevBtn.addEventListener('click', function () {
+prevBtn.addEventListener('click', function (e) {
+  e.preventDefault();
   moveslide(currentIdx - 1);
 });
 function moveslide(num) {
