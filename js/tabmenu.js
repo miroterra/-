@@ -1,11 +1,17 @@
-const tabList = document.querySelectorAll('.tab_menu ul li');
-const tabBtn = document.querySelector('.tab_menu .tab_btn');
+const tabList = document.querySelectorAll('.tab_menu ul > li');
+
 for (let i = 0; i < tabList.length; i++) {
-  tabList[i].tabBtn.addEventListener('click', function (e) {
+  tabList[i].addEventListener('click', function (e) {
     e.preventDefault();
     for (let j = 0; j < tabList.length; j++) {
       tabList[j].classList.remove('active');
     }
-    this.parentNode.classList.add('active');
+    this.classList.add('active');
   });
 }
+
+tabList.addEventListener('focusin', function (e) {
+  if (!tabList.classList.contains('active')) {
+    e.target.classList.add('active');
+  }
+});

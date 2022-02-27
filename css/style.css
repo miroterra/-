@@ -555,6 +555,7 @@
   left: 0;
   width: 270px;
   border: 0;
+  display: none;
 }
 .tab_menu ul li ul li {
   float: none;
