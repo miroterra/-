@@ -683,6 +683,11 @@
 .gallery .gallery_img img {
   width: 100%;
 }
+.gallery_slide {
+  position: relative;
+  width: 289px;
+}
+
 /* log-in */
 .login_wrap {
   margin-bottom: 15px;
@@ -737,6 +742,7 @@
 .login_footer li a {
   font-size: 12px;
 }
+
 /* pop-up */
 .popup {
   margin-top: 15px;

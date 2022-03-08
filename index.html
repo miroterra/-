@@ -20,10 +20,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
     <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/nav_toggle.js" defer></script>
     <script src="/js/Slideshow_loop.js" defer></script>
     <script src="/js/tabmenu.js" defer></script>
+    <script src="/js/gallery_slide.js" defer></script>
   </head>
   <body>
     <!-- skip nav -->
@@ -423,13 +423,13 @@
                   <div class="gallery_btn">
                     <ul>
                       <li class="gb_icon1">
-                        <a href="#"><span class="ir_pm">시작</span></a>
+                        <a href="#" id="btn_start"><span class="ir_pm">시작</span></a>
                       </li>
                       <li class="gb_icon2">
-                        <a href="#"><span class="ir_pm">정지</span></a>
+                        <a href="#" id="btn_stop"><span class="ir_pm">정지</span></a>
                       </li>
                       <li class="gb_icon3">
-                        <a href="#"><span class="ir_pm">이전이미지</span></a>
+                        <a href="#" id="btn_"><span class="ir_pm">이전이미지</span></a>
                       </li>
                       <li class="gb_icon4">
                         <a href="#"><span class="ir_pm">다음이미지</span></a>
@@ -437,20 +437,20 @@
                     </ul>
                   </div>
                   <div class="gallery_img">
-                    <ul>
-                      <li>
+                    <ul class="gallery_slide">
+                      <li class="mySlide showing">
                         <a href="#"><img src="/img/gallery01.jpg" alt="갤러리1" /></a>
                       </li>
-                      <li>
+                      <li class="mySlide">
                         <a href="#"><img src="/img/gallery02.jpg" alt="갤러리2" /></a>
                       </li>
-                      <li>
+                      <li class="mySlide">
                         <a href="#"><img src="/img/gallery03.jpg" alt="갤러리3" /></a>
                       </li>
-                      <li>
+                      <li class="mySlide">
                         <a href="#"><img src="/img/gallery04.jpg" alt="갤러리4" /></a>
                       </li>
-                      <li>
+                      <li class="mySlide">
                         <a href="#"><img src="/img/gallery05.jpg" alt="갤러리5" /></a>
                       </li>
                     </ul>
