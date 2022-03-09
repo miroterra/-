@@ -687,6 +687,15 @@
   position: relative;
   width: 289px;
 }
+.mySlide {
+  opacity: 0;
+  position: absolute;
+}
+
+.showing {
+  opacity: 1;
+  transition: all 0.3s;
+}
 
 /* log-in */
 .login_wrap {
