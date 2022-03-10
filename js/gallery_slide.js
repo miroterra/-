@@ -1,15 +1,16 @@
-function slideOn() {
-  const gallerySlides = document.querySelector('.gallery_slide');
-  const slideItem = document.querySelectorAll('.mySlide');
-  const firstEl = slideItem[0];
-  firstEl.classList.add('showing');
-  const timeSlide = setInterval(autoSlide, 4000);
+const gallerySlides = document.querySelector('.gallery_slide');
+const slideItem = document.querySelectorAll('.mySlide');
+const firstEl = slideItem[0];
+const stopBtn = document.querySelector('#btn_stop');
 
+function slideOn() {
+  firstEl.classList.add('showing');
+  const timeSlide = setInterval(slideStart, 4000);
   function slideStart(isThat) {
     if (isThat) {
-      let clickBtn = 'previous';
+      var clickBtn = 'previous';
     } else {
-      let clickBtn = 'next';
+      var clickBtn = 'next';
     }
     const currentItem = document.querySelector('.showing');
     currentItem.classList.remove('showing');
@@ -38,6 +39,10 @@ function slideOn() {
     e.preventDefault();
     clearInterval(timeSlide);
     slideStart('');
+  });
+  stopBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    clearInterval(timeSlide);
   });
 }
 slideOn();
