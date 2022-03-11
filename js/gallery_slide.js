@@ -2,10 +2,11 @@ const gallerySlides = document.querySelector('.gallery_slide');
 const slideItem = document.querySelectorAll('.mySlide');
 const firstEl = slideItem[0];
 const stopBtn = document.querySelector('#btn_stop');
+const startBtn = document.querySelector('#btn_start');
 
 function slideOn() {
   firstEl.classList.add('showing');
-  const timeSlide = setInterval(slideStart, 4000);
+  let timeSlide = setInterval(slideStart, 4000);
   function slideStart(isThat) {
     if (isThat) {
       var clickBtn = 'previous';
@@ -28,6 +29,15 @@ function slideOn() {
       }
     }
   }
+  startBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    timeSlide = setInterval(slideStart, 4000);
+  });
+  stopBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    clearInterval(timeSlide);
+    clearInterval(slideStart);
+  });
   const nextBtn = document.querySelector('#btn_next');
   const prevBtn = document.querySelector('#btn_prev');
   nextBtn.addEventListener('click', function (e) {
@@ -38,11 +48,7 @@ function slideOn() {
   prevBtn.addEventListener('click', function (e) {
     e.preventDefault();
     clearInterval(timeSlide);
-    slideStart('');
-  });
-  stopBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    clearInterval(timeSlide);
+    slideStart('1');
   });
 }
 slideOn();
