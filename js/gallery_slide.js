@@ -1,8 +1,8 @@
-const gallerySlides = document.querySelector('.gallery_slide');
-const slideItem = document.querySelectorAll('.mySlide');
-const firstEl = slideItem[0];
-const stopBtn = document.querySelector('#btn_stop');
-const startBtn = document.querySelector('#btn_start');
+const gallerySlides = document.querySelector('.gallery_slide'),
+  slideItem = document.querySelectorAll('.mySlide'),
+  firstEl = slideItem[0],
+  stopBtn = document.querySelector('#btn_stop'),
+  startBtn = document.querySelector('#btn_start');
 
 function slideOn() {
   firstEl.classList.add('showing');
@@ -38,8 +38,8 @@ function slideOn() {
     clearInterval(timeSlide);
     clearInterval(slideStart);
   });
-  const nextBtn = document.querySelector('#btn_next');
-  const prevBtn = document.querySelector('#btn_prev');
+  const nextBtn = document.querySelector('#btn_next'),
+    prevBtn = document.querySelector('#btn_prev');
   nextBtn.addEventListener('click', function (e) {
     e.preventDefault();
     clearInterval(timeSlide);

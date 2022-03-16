@@ -1,5 +1,5 @@
-const navBtn = document.querySelector('.tit .btn');
-const navCon = document.querySelector('#cont_nav .nav');
+const navBtn = document.querySelector('.tit .btn'),
+  navCon = document.querySelector('#cont_nav .nav');
 
 navBtn.addEventListener('click', function (e) {
   e.preventDefault();
